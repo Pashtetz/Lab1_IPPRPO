@@ -30,6 +30,13 @@ public class NumberPair {
         return first - second;
     }
 
+    public double multiple() {
+        if (!initialized) {
+            throw new IllegalStateException("Числа не введены!");
+        }
+        return first * second;
+    }
+
     public double getFirst() {
         return first;
     }

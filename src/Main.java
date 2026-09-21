@@ -11,6 +11,7 @@ public class Main {
             System.out.println("1. Ввод двух чисел");
             System.out.println("2. Сложение чисел");
             System.out.println("3. Вычитание чисел");
+            System.out.println("4. Произведение чисел");
             System.out.println("0. Завершение программы");
             System.out.print("Выберите пункт: ");
 
@@ -41,6 +42,15 @@ public class Main {
                     } else {
                         System.out.printf("%.2f - %.2f = %.2f%n",
                                 pair.getFirst(), pair.getSecond(), pair.subtract());
+                    }
+                    break;
+
+                case 4:
+                    if (!pair.isInitialized()) {
+                        System.out.println("Сначала введите числа (пункт 1).");
+                    } else {
+                        System.out.printf("%.2f * %.2f = %.2f%n",
+                                pair.getFirst(), pair.getSecond(), pair.multiple());
                     }
                     break;
 
