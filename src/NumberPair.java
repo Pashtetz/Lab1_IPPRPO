@@ -29,7 +29,12 @@ public class NumberPair {
         }
         return first - second;
     }
-
+    public double divide() {
+        if (!initialized || second == 0) {
+            throw new IllegalStateException("Числа не введены или ошибка деления на ноль!");
+        }
+        return first / second;
+    }
     public double getFirst() {
         return first;
     }
